@@ -1,0 +1,320 @@
+@import '../../scss/breakpoints';
+
+.footer {
+  z-index: 1;
+  background-image: url('https://assets-global.website-files.com/65f5f73df9ed005fb30a00c0/66114c4ea3de6dd984e015b9_Mask%20group%20(25).png');
+  background-position: 0 0;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: -100px;
+  padding-top: 300px;
+  padding-bottom: 88px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.footerContainer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1316px;
+  padding-left: 24px;
+  padding-right: 24px;
+  z-index: 1;
+  background-size: cover;
+  margin-bottom: 100px;
+  position: relative;
+  background-image: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  display: flex;
+}
+
+.footerCard {
+  border: 1px solid #1e1e1e;
+  border-radius: 24px;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+  background-color: rgba(5, 5, 5, 0.05);
+  border-style: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+  overflow: hidden;
+
+  @include bp-l {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include bp-xl {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.footerTopGradient {
+  z-index: -1;
+  background-image: url('https://assets-global.website-files.com/65f5f73df9ed005fb30a00c0/65f5f73df9ed005fb30a0154_footer-top-gradient-cryptomatic-webflow-ecommerce-template.png'),
+    linear-gradient(#0a0a0a, rgba(5, 5, 5, 0));
+  background-position: 50% 0, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  height: 32%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.footerDivider {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0)
+  );
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footerTop {
+  display: grid;
+  grid-column-gap: 48px;
+  grid-row-gap: 16px;
+  flex-wrap: wrap;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  align-items: start;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-items: start;
+
+  @include bp-l {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.footerTopInner {
+  max-width: 608px;
+  opacity: 1;
+  filter: blur(0px);
+
+  h2 {
+    margin-top: 0;
+    letter-spacing: -2px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.222em;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+
+    @include bp-l {
+      font-size: 54px;
+      text-align: left;
+    }
+  }
+}
+
+.footerMiddle {
+  grid-column-gap: 48px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: grid;
+
+  @include bp-l {
+    grid-template-columns: minmax(min-content, 288px) minmax(min-content, 500px) minmax(
+        min-content,
+        186px
+      );
+  }
+}
+
+.footerMiddleLogoContainer {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 1;
+
+  @include bp-l {
+    align-items: flex-start;
+  }
+}
+
+.footerMiddleLogoLink {
+  background-color: rgba(0, 0, 0, 0);
+  transition: color 0.3s;
+  max-width: 100%;
+  color: white;
+  flex-flow: column;
+  text-decoration: none;
+  display: flex;
+}
+
+.footerMiddleLogoImg {
+  width: 300px;
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.footerMiddleLogoText {
+  font-weight: 300;
+  line-height: 1.667em;
+  box-sizing: border-box;
+  color: var(--accent--primary-1);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.footerMiddleLinks {
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+
+  @include bp-l {
+    align-items: center;
+  }
+}
+
+.footerMiddleLinksTitle {
+  font-size: 20px;
+  line-height: 1.1em;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.footerMiddleLinksListContainer {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: start;
+}
+
+.footerMiddleLinksList {
+  margin-top: 0;
+  grid-row-gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footerMiddleLinksListItem {
+  margin-bottom: 0;
+  padding-left: 0;
+  line-height: 1.111em;
+  list-style: none;
+
+  a {
+    transition: color 0.3s;
+    flex-flow: column;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-weight: 300;
+  }
+}
+
+.footerBottom {
+  grid-column-gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @include bp-l {
+    flex-direction: row;
+  }
+}
+
+.footerBottomCopyright {
+  color: #afafaf;
+}
+
+.footerBottomSocialLinks {
+  grid-column-gap: 16px;
+  display: flex;
+}
+
+.footerBottomSocialLink {
+  color: white;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  font-family: 'Social Icons Font', sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+  display: flex;
+
+  img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+  }
+}
+
+.footerBottomGradient {
+  z-index: -1;
+  background-image: url('https://assets-global.website-files.com/65f5f73df9ed005fb30a00c0/65f5f73df9ed005fb30a0155_footer-bottom-gradient-cryptomatic-webflow-ecommerce-template.png'),
+    linear-gradient(rgba(5, 5, 5, 0), #0a0a0a);
+  background-position: 50% 100%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  height: 32%;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footerBgImage {
+  border: 0;
+  vertical-align: middle;
+  display: inline-block;
+  z-index: -1;
+  width: 100%;
+  max-width: 1124px;
+  position: absolute;
+  top: -150px;
+  right: auto;
+
+  @include bp-l {
+    top: -200px;
+  }
+
+  @include bp-xl {
+    top: -300px;
+  }
+}

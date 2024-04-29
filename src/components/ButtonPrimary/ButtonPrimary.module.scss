@@ -1,0 +1,55 @@
+@import '../../scss/breakpoints';
+
+.headerBtnPrimaryWrapper {
+  z-index: 1;
+  transform-style: preserve-3d;
+  border-radius: 96px;
+  padding: 1px;
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.lineRoundedIcon {
+  font-size: 16px;
+  margin-left: 6px;
+  display: inline-block;
+}
+
+.headerBtnPrimary {
+  color: var(--accent--primary-1);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(96deg, #1fbee3, #86a8e7 54%, #d16ba5);
+  border-radius: 96px;
+  justify-content: center;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.111em;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.headerBtnPrimaryBorder {
+  z-index: -1;
+  background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(135deg, #d16ba5, #86a8e7 50%, #5ffbf1);
+  border-radius: 96px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

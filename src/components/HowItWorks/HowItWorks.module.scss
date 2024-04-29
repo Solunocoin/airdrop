@@ -1,0 +1,59 @@
+@import '../../scss/breakpoints';
+
+.howItWorksTitle {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 500;
+}
+
+.howItWorks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include bp-l {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.howItWorksCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include bp-l {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @include bp-xl {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-align: center;
+
+    a {
+      color: white;
+    }
+  }
+}

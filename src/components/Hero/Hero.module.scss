@@ -1,0 +1,136 @@
+@import '../../scss/breakpoints';
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.heroBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.heroInner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include bp-l {
+    flex-direction: row-reverse;
+    padding-top: 200px;
+    gap: 4rem;
+  }
+
+  @include bp-xl {
+    gap: 8rem;
+  }
+}
+
+.heroBlob {
+  width: 150%;
+  height: 400px;
+  position: absolute;
+  bottom: 30%;
+  left: -100%;
+  transform: translateX(50%);
+  z-index: 1;
+
+  @include bp-s {
+    bottom: 20%;
+    transform: translateX(60%);
+  }
+
+  @include bp-l {
+    bottom: unset;
+    top: 15%;
+    left: -25%;
+    transform: translateX(0);
+  }
+
+  @include bp-xl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 25%;
+    left: -45%;
+  }
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 4rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(28deg, #1fbfe388, #86a8e781 54%, #d16ba58d);
+  padding: 2rem;
+}
+
+.heroTitle {
+  font-weight: 600;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+
+  @include bp-l {
+    text-align: left;
+  }
+}
+
+.heroSubtitle {
+  text-align: center;
+
+  @include bp-l {
+    text-align: left;
+  }
+}
+
+.heroSecondContent {
+  padding-top: 2rem;
+
+  h2 {
+    font-weight: 600;
+  }
+}
+
+.heroSecondSubtitle {
+  padding-top: 1rem;
+  display: flex;
+
+  span {
+    color: red;
+    font-size: 40px;
+    margin-right: 0.5rem;
+  }
+}
+
+.heroSteps {
+  padding-top: 1rem;
+}
+
+.heroStep {
+  padding: 0.5rem 0;
+  span {
+    font-size: 40px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.heroButtons {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

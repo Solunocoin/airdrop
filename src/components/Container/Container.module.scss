@@ -1,0 +1,20 @@
+@import '../../scss/breakpoints';
+
+.container {
+  max-width: 1316px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include bp-s {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include bp-l {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

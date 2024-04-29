@@ -1,0 +1,12 @@
+export declare const hero: string;
+export declare const heroBackground: string;
+export declare const heroBlob: string;
+export declare const heroButtons: string;
+export declare const heroContent: string;
+export declare const heroInner: string;
+export declare const heroSecondContent: string;
+export declare const heroSecondSubtitle: string;
+export declare const heroStep: string;
+export declare const heroSteps: string;
+export declare const heroSubtitle: string;
+export declare const heroTitle: string;

@@ -1,0 +1,15 @@
+@import '../../scss/breakpoints';
+
+.main {
+  min-height: calc(100vh + 148px);
+  margin-top: -148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  @include bp-l {
+    min-height: calc(100vh - 96px);
+  }
+}

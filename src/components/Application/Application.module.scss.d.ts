@@ -1,0 +1,10 @@
+export declare const applicationButton: string;
+export declare const applicationContent: string;
+export declare const applicationForm: string;
+export declare const applicationInput: string;
+export declare const applicationInputLabel: string;
+export declare const applicationInputWrapper: string;
+export declare const applicationStep: string;
+export declare const applicationSubtitle: string;
+export declare const applicationTitle: string;
+export declare const required: string;

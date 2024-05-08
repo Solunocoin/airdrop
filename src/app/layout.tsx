@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     'Don’t miss the opportunity to be part of one of the biggest airdrops in the Solana ecosystem. Join now with 3 easy steps and get free $UNO tokens.',
   openGraph: {
-    images: `https://tracksol.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.4774ccb0.png&w=2048&q=75`,
+    images: `https://airdrop-ruddy.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fparachute.2f5eac58.png&w=1080&q=75`,
     title: 'Soluno Airdrop - Get free $UNO tokens!!',
     authors: 'telegram - @devuno1',
   },

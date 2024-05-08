@@ -1,0 +1,69 @@
+@import '../../../scss/breakpoints';
+
+.applicationModalMessage {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 20px;
+}
+
+.applicationModalSupportText {
+  padding-bottom: 1rem;
+  line-height: 20px;
+}
+
+.applicationModalSupportInner {
+  padding-top: 1rem;
+  border-top: 0.1px solid white;
+
+  a {
+    margin-top: 0.5rem;
+    display: flex;
+    color: white;
+    gap: 0.5rem;
+  }
+}
+
+.applicationModalCloseBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.applicationModalErrorFields {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  h4 {
+    font-weight: 500;
+  }
+}
+
+.applicationModalErrorField {
+  span {
+    font-weight: 500;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.applicationModalApplicationStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  span {
+    font-weight: 500;
+  }
+}
+
+.applicationModalApplicationStatusCircle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+}

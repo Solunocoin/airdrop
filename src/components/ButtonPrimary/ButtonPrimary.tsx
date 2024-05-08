@@ -1,11 +1,16 @@
 import styles from './ButtonPrimary.module.scss';
 
-const ButtonPrimary = ({ href, text, target }: IButtonPrimary) => {
+const ButtonPrimary = ({
+  href,
+  text,
+  target,
+  showIcon = false,
+}: IButtonPrimary) => {
   return (
     <div className={styles.headerBtnPrimaryWrapper}>
       <a href={href} className={styles.headerBtnPrimary} target={target}>
         {text}
-        <span className={styles.lineRoundedIcon}></span>
+        {showIcon && <span className={styles.lineRoundedIcon}></span>}
       </a>
       <div className={styles.headerBtnPrimaryBorder}></div>
     </div>

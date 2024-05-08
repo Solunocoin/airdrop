@@ -1,0 +1,35 @@
+@import '../../scss/breakpoints';
+
+.statusCheck {
+  display: flex;
+  flex-direction: column;
+
+  @include bp-l {
+    flex-direction: row;
+    padding-top: 2rem;
+  }
+}
+
+.statusCheckHero {
+  padding: 0 1rem;
+  padding-top: 4rem;
+
+  h1 {
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+
+    @include bp-l {
+      text-align: left;
+    }
+  }
+
+  p {
+    padding-top: 1rem;
+    text-align: center;
+
+    @include bp-l {
+      text-align: left;
+    }
+  }
+}

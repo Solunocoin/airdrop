@@ -1,13 +1,9 @@
 import styles from './ButtonSecondary.module.scss';
 
-const ButtonSecondary = () => {
+const ButtonSecondary = ({ text, href, target }: IButtonSecondary) => {
   return (
-    <a
-      href="https://tracksol.io/"
-      target="_blank"
-      className={styles.buttonSecondary}
-    >
-      How it works
+    <a href={href} className={styles.buttonSecondary} target={target}>
+      {text}
     </a>
   );
 };

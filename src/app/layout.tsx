@@ -91,6 +91,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </SkeletonTheme>
+        <div id="modals" />
       </body>
     </html>
   );

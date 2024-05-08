@@ -16,6 +16,7 @@
     "@metaplex-foundation/umi-bundle-defaults": "^0.9.1",
     "@metaplex-foundation/umi-public-keys": "^0.8.9",
     "@next/third-parties": "^14.1.4",
+    "@prisma/client": "^5.13.0",
     "@solana/spl-token": "^0.4.3",
     "@solana/spl-token-metadata": "^0.1.2",
     "@solana/spl-token-registry": "^0.2.4574",
@@ -32,16 +33,21 @@
     "react-bootstrap-icons": "^1.11.3",
     "react-dom": "^18",
     "react-loading-skeleton": "^3.4.0",
+    "react-modal": "^3.16.1",
     "react-tooltip": "^5.26.3",
-    "sharp": "^0.33.3"
+    "sharp": "^0.33.3",
+    "twitter-validate": "^1.0.8",
+    "zod": "^3.23.5"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-modal": "^3.16.3",
     "concurrently": "^8.2.2",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
+    "prisma": "^5.13.0",
     "sass": "^1.72.0",
     "typed-scss-modules": "^8.0.1",
     "typescript": "^5"

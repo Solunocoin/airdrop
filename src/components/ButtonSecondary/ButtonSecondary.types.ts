@@ -1,3 +1,5 @@
-interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
+interface IButtonSecondary {
+  text: string;
+  href: string;
+  target?: string;
 }

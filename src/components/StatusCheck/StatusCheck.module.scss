@@ -103,3 +103,19 @@
   font-size: 14px;
   color: #ff0000;
 }
+
+.applicationStatus {
+  margin-top: 2rem;
+
+  h2 {
+    font-weight: 500;
+  }
+}
+
+.applicationStatusContent {
+  padding-top: 1rem;
+
+  span {
+    font-weight: 500;
+  }
+}

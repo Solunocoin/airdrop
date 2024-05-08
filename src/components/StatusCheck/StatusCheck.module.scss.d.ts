@@ -5,6 +5,8 @@ export declare const applicationInput: string;
 export declare const applicationInputError: string;
 export declare const applicationInputLabel: string;
 export declare const applicationInputWrapper: string;
+export declare const applicationStatus: string;
+export declare const applicationStatusContent: string;
 export declare const applicationStep: string;
 export declare const applicationSubtitle: string;
 export declare const applicationTitle: string;

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ButtonPrimary from '../ButtonPrimary/ButtonPrimary';
 import styles from './Footer.module.scss';
 
@@ -41,9 +42,15 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className={styles.footerMiddleLinksListItem}>
-                    <a href="/coming-soon" className="footer-link">
-                      About
-                    </a>
+                    <Link
+                      href="/"
+                      className="footer-link"
+                      style={{
+                        textDecoration: 'underline',
+                      }}
+                    >
+                      Airdrop
+                    </Link>
                   </li>
                   <li className={styles.footerMiddleLinksListItem}>
                     <a href="/coming-soon" className="footer-link">

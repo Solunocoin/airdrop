@@ -69,16 +69,14 @@ const Hero = () => {
               </a>
             </div>
             <div className={styles.heroStep}>
-              <span>3.</span> Fill out the form{' '}
-              <a href="https://twitter.com/soluno_coin" target="_blank">
-                below
-              </a>
+              <span>3.</span> Fill out the form <a href="#application">below</a>
             </div>
           </div>
 
           <div className={styles.heroButtons}>
             <ButtonPrimary href="#application" text="Apply Now" />
-            <ButtonSecondary />
+            <ButtonSecondary href="#howItWorks" text="How It Works" />
+            <ButtonPrimary href="/status" text="Status Check" showIcon />
           </div>
         </div>
       </div>

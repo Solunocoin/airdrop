@@ -2,6 +2,7 @@
 
 import { clsx } from 'clsx';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import soluno_logo from '../../../public/soluno_logo.png';
 import telegram_log_white from '../../../public/telegram_logo_white.png';
@@ -35,7 +36,11 @@ const Navbar = () => {
       <Container>
         <div className={styles.headerContentWrapper}>
           <div className={styles.headerLeftSide}>
-            <a href="/" aria-current="page" className={styles.headerLogoLink}>
+            <a
+              href="https://www.soluno.io/"
+              aria-current="page"
+              className={styles.headerLogoLink}
+            >
               <Image
                 src={soluno_logo}
                 width={80}
@@ -56,12 +61,15 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className={styles.headerNavListItem}>
-                  <a
-                    href="https://www.soluno.io/coming-soon"
+                  <Link
+                    style={{
+                      textDecoration: 'underline',
+                    }}
+                    href="/"
                     className={styles.headerNavLink}
                   >
-                    About
-                  </a>
+                    Airdrop
+                  </Link>
                 </li>
                 <li className={styles.headerNavListItem}>
                   <a
@@ -78,14 +86,10 @@ const Navbar = () => {
                   )}
                 >
                   <div className={styles.headerBtnPrimaryWrapper}>
-                    <a
-                      href="https://t.me/solunocoin"
-                      className={styles.headerBtnPrimary}
-                      target="_blank"
-                    >
-                      Join Us
+                    <Link href="/" className={styles.headerBtnPrimary}>
+                      Join Airdrop
                       <span className={styles.lineRoundedIcon}></span>
-                    </a>
+                    </Link>
                     <div className={styles.headerBtnPrimaryBorder}></div>
                   </div>
                 </li>
@@ -122,14 +126,10 @@ const Navbar = () => {
               </a>
             </div>
             <div className={styles.headerBtnPrimaryWrapper}>
-              <a
-                href="https://t.me/solunocoin"
-                className={styles.headerBtnPrimary}
-                target="_blank"
-              >
-                Join Us
+              <Link href="/" className={styles.headerBtnPrimary}>
+                Join Airdrop
                 <span className={styles.lineRoundedIcon}></span>
-              </a>
+              </Link>
               <div className={styles.headerBtnPrimaryBorder}></div>
             </div>
             <div
@@ -201,14 +201,10 @@ const Navbar = () => {
                   showMenu && styles.headerBtnPrimaryWrapperActive,
                 )}
               >
-                <a
-                  href="https://t.me/solunocoin"
-                  className={styles.headerBtnPrimary}
-                  target="_blank"
-                >
-                  Join Us
+                <Link href="/" className={styles.headerBtnPrimary}>
+                  Join Airdrop
                   <span className={styles.lineRoundedIcon}></span>
-                </a>
+                </Link>
                 <div className={styles.headerBtnPrimaryBorder}></div>
               </div>
             </li>

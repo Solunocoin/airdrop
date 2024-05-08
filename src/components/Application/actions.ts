@@ -105,6 +105,7 @@ export async function createUser(
     } else if (telegramResponse.status === 404) {
       return {
         status: 'error',
+        errorCode: 'telegram_username_not_in_group',
         message: 'Your Telegram username is not a member of our group.',
       };
     }

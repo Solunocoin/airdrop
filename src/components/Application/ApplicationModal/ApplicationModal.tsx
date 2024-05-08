@@ -167,14 +167,26 @@ const ApplicationModal = ({ state }: IApplicationModal) => {
                   ) : state.errorCode === 'telegram_username_not_in_group' ? (
                     <div>
                       Please join our Telegram group and apply again.{' '}
-                      <a href="https://t.me/solunocoin" target="_blank">
+                      <a
+                        style={{
+                          color: 'white',
+                        }}
+                        href="https://t.me/solunocoin"
+                        target="_blank"
+                      >
                         (@solunocoin)
                       </a>
                     </div>
                   ) : state.errorCode === 'twitter_not_following' ? (
                     <div>
                       Please follow us on Twitter/X and apply again.{' '}
-                      <a href="https://twitter.com/soluno_coin" target="_blank">
+                      <a
+                        style={{
+                          color: 'white',
+                        }}
+                        href="https://twitter.com/soluno_coin"
+                        target="_blank"
+                      >
                         (@soluno_coin)
                       </a>
                     </div>

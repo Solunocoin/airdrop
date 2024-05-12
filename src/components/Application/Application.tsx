@@ -92,6 +92,7 @@ const Application = () => {
                   ? '1px solid red'
                   : 'none',
             }}
+            required
           />
 
           {state.status === 'error' && state.message.includes('Telegram') && (
@@ -120,6 +121,7 @@ const Application = () => {
                   ? '1px solid red'
                   : 'none',
             }}
+            required
           />
 
           {state.status === 'error' && state.message.includes('Twitter') && (

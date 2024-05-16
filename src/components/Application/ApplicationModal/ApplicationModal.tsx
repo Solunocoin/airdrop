@@ -215,11 +215,18 @@ const ApplicationModal = ({ state }: IApplicationModal) => {
                   <span>Status:</span>{' '}
                   <span
                     className={styles.applicationModalApplicationStatusCircle}
+                    style={{
+                      backgroundColor:
+                        state.applicationStatus === 'unverified'
+                          ? 'yellow'
+                          : state.status === 'success'
+                          ? '#ADFFA2'
+                          : '#F08FBE',
+                    }}
                   ></span>{' '}
-                  <span>Unverified</span>
+                  <span>{state.applicationStatus}</span>
                 </div>
-                <div>All application start with unverified status.</div>
-                <div>Next validation check is in 2h 40min.</div>
+
                 <div>
                   Check status at any time.{' '}
                   <Link

@@ -8,7 +8,7 @@ export async function isWalletAddress(address: string): Promise<boolean> {
 
     // Check if account can sign transactions (is a wallet)
     // Wallets typically should not be executable and should have a non-zero lamports balance
-    if (accountInfo && !accountInfo.executable && accountInfo.lamports > 0) {
+    if (accountInfo && !accountInfo.executable) {
       return true;
     }
     return false;

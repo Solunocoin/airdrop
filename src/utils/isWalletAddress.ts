@@ -1,3 +1,4 @@
+import { TOKEN_2022_PROGRAM_ID, TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import { PublicKey } from '@solana/web3.js';
 import { solana } from '../../lib/solana';
 
@@ -6,9 +7,12 @@ export async function isWalletAddress(address: string): Promise<boolean> {
     const pubkey = new PublicKey(address);
     const accountInfo = await solana.getAccountInfo(pubkey);
 
-    // Check if account can sign transactions (is a wallet)
-    // Wallets typically should not be executable and should have a non-zero lamports balance
-    if (accountInfo && !accountInfo.executable) {
+    if (
+      accountInfo?.owner.equals(TOKEN_PROGRAM_ID) ||
+      accountInfo?.owner.equals(TOKEN_2022_PROGRAM_ID)
+    ) {
+      return false;
+    } else {
       return true;
     }
     return false;
